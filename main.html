@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title> Sample Web App </title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/styles/jqx.base.css" type="text/css" />
+		<link rel="stylesheet" href="../../../Downloads/jqwidgets-ver4.1.1/styles/jquery-ui.min.css">
+
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/scripts/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxbuttons.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxscrollbar.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.selection.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxgrid.columnsresize.js"></script>
+		<script type="text/javascript" src="../../../Downloads/jqwidgets-ver4.1.1/jqwidgets/jqxdata.js"></script>
+		<script src="../../../Downloads/jqwidgets-ver4.1.1/scripts/jquery-ui.min.js"></script>
+
+		<script src="jqhelper.js"></script>
+
+		<script>
+		  $(function() {
+			$( "#datePicker" ).datepicker();
+		  });
+  		</script>
+	</head>
+	<body class='default'>
+		<form>
+			<div class="row">
+				<input id="name" type="text" required>
+				<input id="datePicker" type="text" >
+				<select id="color" required>
+				</select>
+			</div>
+			<div class="row">
+				<button id="add" type="submit"> Add
+				</button>
+				<button id="clear"> Clear
+				</button>
+			</div>
+
+			<div  class="row" id='jqxWidget'>
+				<div id="jqxgrid"></div>
+			</div>
+		</form>
+	</body>
+</html>
